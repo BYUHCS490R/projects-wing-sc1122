@@ -1,0 +1,25 @@
+body{
+    color: blueviolet;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+header h1{
+    color: aqua;
+}
+p{
+    color: rgb(52, 172, 68);
+}
+#shrimp{
+    color: rgb(246, 131, 48);
+}
+.squash{
+    color: rgb(95, 168, 107);
+}
+.bigger{
+    font-size: 15pt;
+}
+.diff{
+    font-style: italic;
+}
+.special{
+    font-weight: 900;
+}
