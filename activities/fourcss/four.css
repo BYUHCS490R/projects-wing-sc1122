@@ -1,0 +1,15 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('1.jpg');
+    background-repeat: repeat;
+    background-color: rgba(10, 70, 138, 0.732);
+    color: white;
+}
+header{
+    background-image: url('2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.list{
+    list-style-image: url(3.png);
+}
