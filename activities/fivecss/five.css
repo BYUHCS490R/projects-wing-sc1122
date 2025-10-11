@@ -1,0 +1,26 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: cadetblue;
+}
+header{
+    background-color: darkkhaki;
+    width:70%;
+    margin: 30px;
+    padding: 50px 30px 100px 3px;
+}
+figure{
+    border: thin solid #000;
+    width: 200px;
+}
+img{
+    width: 200px;
+}
+#wrapper{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+header h1{
+    margin-bottom: 0;
+    border: 3px solid red;
+}
