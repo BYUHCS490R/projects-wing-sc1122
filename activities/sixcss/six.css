@@ -1,0 +1,36 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*margin-top: 300px;*/
+}
+nav a{
+    display: block;
+    padding: 15px;
+    background-color: aqua;
+    border-bottom: thin solid white;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+.brain{
+    border: thin solid black;
+    width: 300px;
+}
+.brain img{
+    width:100%
+}
+.stop{
+    clear:both;
+}
+.floater{
+    float:left
+}
+
+.hammer{
+    position:fixed;
+    top:10px;
+    left:200px;
+    margin:0;
+    z-index:-1;
+}
