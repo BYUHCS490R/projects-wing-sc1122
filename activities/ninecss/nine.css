@@ -50,3 +50,25 @@ main h2{
 .sidebar h3{
     margin: 0;
 }
+
+@media ONLY screen AND (max-width: 400px) {
+    body{
+        background-color: aquamarine;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .main-row{
+        flex-direction: column-reverse;
+    }
+    .main-card{
+        order: -1;
+    }
+}
+
+@media ONLY screen AND (max-width: 600px){
+    
+}
