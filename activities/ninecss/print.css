@@ -51,3 +51,9 @@ main h2{
 article{
     font-family: 'Times New Roman', Times, serif;
 }
+
+@media ONLY screen AND (max-width: 400px) {
+    nav{
+        flex-direction: column;
+    }
+}
