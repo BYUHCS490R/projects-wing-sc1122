@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ten.css">
+</head>
+<body>
+    <header>
+        <h1>my web page</h1>
+    </header>
+    <nav>
+        <a href="#">link</a>
+    </nav>
+    <main>
+        <h2>Table</h2>
+        <table border="1">
+            <caption>My Class Schedule</caption>
+            <thead>
+                <tr>
+                    <td>Department</td>
+                    <td>Number</td>
+                    <td>Title</td>
+                    <td>Time</td>
+                    <td>Location</td>
+                    <td>Credits</td>
+                </tr>
+                <tr>
+                    <th colspan="6">Fall 2025</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CS</td>
+                    <td>140</td>
+                    <td>Web Design</td>
+                    <td>11 AM MWF</td>
+                    <td>P3</td>
+                    <td rowspan="2">3</td>
+                </tr>
+                <tr>
+                    <td>ACCT</td>
+                    <td>201</td>
+                    <td>Intro to Financial</td>
+                    <td>12 PM MWF</td>
+                    <td>HGB</td>
+                    
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>121</td>
+                    <td>Statistic</td>
+                    <td>8 AM MWF</td>
+                    <td>SCB</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>SSAC</td>
+                    <td>136</td>
+                    <td>Badminton</td>
+                    <td>9 AM MW</td>
+                    <td>McKay</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" id="total-credits">Total Credits</th>
+                    <td headers="total-credits">9</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>1. when we want to display some data,like Statistic and schedule</p>
+        <p>2. when we want to do layout and position thing</p>
+        <p>3. when there are many column of data need to be display, help reader to understand our table easily</p>
+    </main>
+    <footer>
+        &copy;Steffi Cheung 2025
+    </footer>
+</body>
+</html>
