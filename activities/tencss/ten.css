@@ -1,0 +1,41 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*.schedule{
+    border: 20px inset black;
+    padding: 0px;
+    border-spacing: 3px;
+    border-collapse: separate;
+    caption-side: bottom;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(27, 0, 159);
+}
+
+.schedule th, .schedule td{
+    border: thin solid black;
+    padding: 5px;
+    background-color: rgb(191, 226, 239);
+}*/
+
+.schedule{
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+}
+.schedule thead tr{
+    background-color: cadetblue;
+    color: white;
+}
+.schedule tfoot tr{
+    background-color: cadetblue;
+    color: white;
+}
+.schedule tbody tr:nth-child(even){
+    background-color: lightgrey;
+}
+.num{
+    vertical-align: bottom;
+}
