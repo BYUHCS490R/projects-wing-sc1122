@@ -1,0 +1,41 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    width: 300px;
+}
+.col{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    width: 300px;
+}
+.sidebar h2, ul{
+    margin-left: 30px;
+}
+.info{
+    border-spacing: 2px;
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+    margin: auto;
+    align-self: center;
+}
+.info thead tr{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: larger;
+    background-color: cadetblue;
+    color: white;
+}
+.info tfoot tr{
+    background-color: cadetblue;
+    color: white;
+}
+.info tbody tr:nth-child(even){
+    background-color: lightgrey;
+}
+.info td{
+    padding: 5px;
+    text-align: center;
+}
