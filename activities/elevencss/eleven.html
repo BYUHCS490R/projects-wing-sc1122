@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="eleven.css">
+</head>
+<body>
+    <header>
+        <h1>mt web page</h1>
+    </header>
+    <nav>
+        <a href="#">link</a>
+    </nav>
+    <main>
+        <h2>forms</h2>
+        <form action="formprocess.html" method="post">
+            <div>
+                First Name: <input type="text" name="fname">
+            </div>
+            <div>
+                Last Name: <input type="text" name="lname">
+            </div>
+            <div>
+                <label for="fname">Full Name:</label>
+                <input type="text" name="fullname" placeholder="Full Name" id="fname">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="your@email.com" id="email">
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank">---</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="CA">California</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <label> <input type="checkbox" checked> I agree to the terms</label> 
+            </div>
+            <div>
+                Gender
+                <label><input type="radio" name="gender" value="Male">Male</label>
+                <label><input type="radio" name="gender" value="Female" checked>Female</label>
+            </div>
+            <div>
+                <label for="comment">Comments:</label>
+                <textarea name="comment" id="comment">Hello</textarea>
+            </div>
+            <input type="submit" value="sign up">
+        </form>
+        <p>1.it send the form data when the user clicks the submit button</p>
+        <p>2.it defines how the form data is sent to the server, GET or POST</p>
+        <p>3.GET, the data that we have inputted will be shown on the url but Post won't, which is more secure</p>
+        <p>POST: change, add, updates, remove</p>
+        <p>GET: reading</p>
+    </main>
+    <footer>
+        &copy;Steffi Cheung 2025
+    </footer>
+</body>
+</html>
