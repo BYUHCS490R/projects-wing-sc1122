@@ -1,0 +1,55 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-row{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+.spacer{
+    width: 150px;
+    text-align: right;
+}
+.check-row{
+    display: flex;
+    gap: 10px;
+}
+.form-row input:not([type='submit']), .form-row select, .form-row textarea{
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(208, 208, 243);
+}
+.form-row input:not([type='submit']):focus, .form-row select, .form-row textarea{
+    background-color: white;
+}
+.form-row input[type='submit']{
+    background-color: rgb(83, 83, 121);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+fieldset{
+    background-color: rgb(179, 179, 200);
+    margin: auto;
+    width: 80%;
+}
+legend{
+    background-color: rgb(83, 83, 121);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+@media ONLY screen AND (max-width:480px){
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+    .form-row label, .spacer{
+        text-align: left;
+    }
+}

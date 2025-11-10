@@ -16,47 +16,56 @@
     <main>
         <h2>forms</h2>
         <form action="formprocess.html" method="post">
-            <div>
-                First Name: <input type="text" name="fname">
-            </div>
-            <div>
-                Last Name: <input type="text" name="lname">
-            </div>
-            <div>
-                <label for="fname">Full Name:</label>
-                <input type="text" name="fullname" placeholder="Full Name" id="fname">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" placeholder="your@email.com" id="email">
-            </div>
-            <div>
-                <label for="pass">Password:</label>
-                <input type="password" name="pass" id="pass">
-            </div>
-            <div>
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="blank">---</option>
-                    <option value="HI" selected>Hawaii</option>
-                    <option value="CA">California</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
-            <div>
-                <label> <input type="checkbox" checked> I agree to the terms</label> 
-            </div>
-            <div>
-                Gender
-                <label><input type="radio" name="gender" value="Male">Male</label>
-                <label><input type="radio" name="gender" value="Female" checked>Female</label>
-            </div>
-            <div>
-                <label for="comment">Comments:</label>
-                <textarea name="comment" id="comment">Hello</textarea>
-            </div>
-            <input type="submit" value="sign up">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <!--<div class="form-row">
+                    First Name: <input type="text" name="fname">
+                </div>
+                <div class="form-row">
+                    Last Name: <input type="text" name="lname">
+                </div>-->
+                <div class="form-row">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">---</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="CA">California</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label> <input type="checkbox" checked> I agree to the terms</label> 
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Gender</div>
+                    <label><input type="radio" name="gender" value="Male">Male</label>
+                    <label><input type="radio" name="gender" value="Female" checked>Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment">Hello</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="sign up">
+                </div>
+            </fieldset>
         </form>
+        <p>2.1 we can use spacing, alignment, and colors to style the form.</p>
+        <p>2.2 by adjusting the layout of elements based on the width</p>
         <p>1.it send the form data when the user clicks the submit button</p>
         <p>2.it defines how the form data is sent to the server, GET or POST</p>
         <p>3.GET, the data that we have inputted will be shown on the url but Post won't, which is more secure</p>
