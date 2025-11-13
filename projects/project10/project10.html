@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="project10.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+</head>
+<body>
+    <header>
+        <h1>my web page</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <h2>form</h2>
+        <form action="info.html" method="post">
+            <fieldset>
+                <legend>Student Information</legend>
+                <div class="row">
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div class="row">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div class="row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="row">
+                    <label for="pw">Password:</label>
+                    <input type="password" name="pw" id="pw">
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Gender:</div>
+                    <label><input type="radio" name="gender" value="Male">Male</label>
+                    <label><input type="radio" name="gender" value="Female">Female</label>
+                </div>
+                <div class="row">
+                    <label for="DOB">Date of Birth:</label>
+                    <input type="date" name="DOB" id="DOB">
+                </div>
+                <div class="row">
+                    <label for="Continent">Continent:</label>
+                    <select name="continent" id="continent">
+                        <option value="blank">---</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Africa">Afirca</option>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                        <option value="Oceania">Oceania</option>
+                        <option value="Antarctica">Antarctica</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="tel">Contact Number:</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                <div class="row">
+                    <label for="intro">Introduction:</label>
+                    <textarea name="into" id="intro"></textarea>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label> <input type="checkbox"> I agree to the terms</label> 
+                </div>
+                <div class="row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy;Steffi Cheung 2025
+    </footer>
+</body>
+</html>
