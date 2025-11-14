@@ -15,7 +15,7 @@
     </nav>
     <main>
         <h2>forms</h2>
-        <form action="formprocess.html" method="post">
+        <form action="formprocess.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
                 <!--<div class="form-row">
@@ -35,6 +35,10 @@
                 <div class="form-row">
                     <label for="pass">Password:</label>
                     <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="age" name="age" id="age">
                 </div>
                 <div class="form-row">
                     <label for="state">State:</label>
@@ -64,6 +68,10 @@
                 </div>
             </fieldset>
         </form>
+        <p>3.1 A program language Make Html interactive. Because Java was popular at that time so the name was changed from livescript to javascript to take advantage on a marketing rreason.</p>
+        <p>3.2 DOM, in a browser/html page or Dode.js</p>
+        <p>3.3 jQuery</p>
+        <p>3.4 React, react native, eletrom</p>
         <p>2.1 we can use spacing, alignment, and colors to style the form.</p>
         <p>2.2 by adjusting the layout of elements based on the width</p>
         <p>1.it send the form data when the user clicks the submit button</p>
@@ -75,5 +83,36 @@
     <footer>
         &copy;Steffi Cheung 2025
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event){
+            event.preventDefault();
+            
+
+            const fullname = document.getElementById('fname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+
+            if (!fullname || !email){
+                alert("You need a name and email.");
+                return;
+            }
+
+            if (!age || age <18) {
+                alert("You need to be 18");
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+
+            alert("Form Submitted");
+            console.log(formData);
+        });
+    </script>
 </body>
 </html>
