@@ -14,6 +14,7 @@
         <a href="#">link</a>
     </nav>
     <main>
+        <div id="message"></div>
         <h2>forms</h2>
         <form action="formprocess.html" method="post" id="myForm">
             <fieldset>
@@ -68,6 +69,8 @@
                 </div>
             </fieldset>
         </form>
+        <p>4.1 Searching on Google and seeing suggestions appear</p>
+        <p>4.2 it can be cleaner, reusable, and organized</p>
         <p>3.1 A program language Make Html interactive. Because Java was popular at that time so the name was changed from livescript to javascript to take advantage on a marketing rreason.</p>
         <p>3.2 DOM, in a browser/html page or Dode.js</p>
         <p>3.3 jQuery</p>
@@ -83,36 +86,6 @@
     <footer>
         &copy;Steffi Cheung 2025
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event){
-            event.preventDefault();
-            
-
-            const fullname = document.getElementById('fname').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('pass').value;
-            const age = document.getElementById('age').value;
-
-            if (!fullname || !email){
-                alert("You need a name and email.");
-                return;
-            }
-
-            if (!age || age <18) {
-                alert("You need to be 18");
-                return;
-            }
-
-            const formData = {
-                name: fullname,
-                email: email,
-                password: password,
-                age: age
-            };
-
-            alert("Form Submitted");
-            console.log(formData);
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
