@@ -7,8 +7,8 @@ document.getElementById('myForm').addEventListener('submit',function(event){
     const password = document.getElementById('pass').value;
     const age = document.getElementById('age').value;
 
-    if (!fullname || !email){
-        alert("You need a name and email.");
+    if (!fullname || !email || !password){
+        alert("You need a name, email and password.");
         return;
     }
 
@@ -16,7 +16,10 @@ document.getElementById('myForm').addEventListener('submit',function(event){
         alert("You need to be 18");
         return;
     }
-
+    if (password.length < 6 || password.length > 15) {
+        alert("Password must be between 6 to 15 characters long.");
+        return;
+    }
     const formData = {
         name: fullname,
         email: email,
