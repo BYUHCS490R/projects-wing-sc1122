@@ -4,24 +4,38 @@ body{
     margin: 0;
 }
 header{
-    background-color: #151E3F;
-    color: #DC9E82;
-    padding: auto;
-    font-size: 15pt;
+    background-color: #2e189c;
+    color: #f2e7e2;
+    padding: 8px;
+    text-align: center;
+    font-size: large;
 }
 nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+}
+nav a{
+    display: block;
     background-color: #bbc2dd;
-    padding: 10pt;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(177, 177, 244);
+    box-shadow: 5px 5px 5px black;
+
 }
 nav a:hover{
     text-decoration: underline;
     color: yellow
 }
-
+.fig img{
+    width: 700px;
+    height: 400px;
+} 
 img{
-    width: 100%;
+    width: 400px;
+    height: 300px;
 }
 form {
     max-width: 400px;
@@ -29,32 +43,126 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
+}
   
-  form input,
-  form select,
-  form textarea {
+form input,form select,form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
-  }
+}
   
-  form button {
+form button {
     padding: 12px;
     background: #0066cc;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-  }
+}
   
-  form button:hover {
+form button:hover {
     background: #004d99;
-  }
+}
   
-  #formFeedback {
+#formFeedback {
     text-align: center;
     font-weight: bold;
     margin-top: 15px;
-  }
+}
   
+.place,.food,.car{
+    border: thin solid #610a10;
+    box-shadow: 5px 5px 5px ;
+    width: 400px;
+    margin: 7px;
+}
+.row{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.schedule{
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+    font-size: 15pt;
+}
+.schedule thead tr{
+    background-color: #0d3d6d;
+    color: white;
+    text-align: center;
+    border: 2pt solid black;
+    font-size: 18pt;
+}
+.schedule tfoot tr{
+    background-color: cadetblue;
+    color: white;
+}
+.schedule tbody tr:nth-child(even){
+    background-color: rgb(176, 215, 239);
+}
+.schedule tbody tr:nth-child(odd){
+    background-color: rgb(177, 231, 237);
+}
+.schedule caption{
+    font-size: 28pt;
+    font-style: italic;
+}
+.schedule td{
+    padding: 3px;
+}
+
+.form-row{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row label{
+    width: 100px;
+    text-align: right;
+}
+.spacer{
+    width: 100px;
+    text-align: right;
+}
+.check-row{
+    display: flex;
+    gap: 10px;
+}
+.form-row input:not([type='submit']), .form-row select, .form-row textarea{
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(231, 231, 239);
+}
+.form-row input:not([type='submit']):focus, .form-row select, .form-row textarea{
+    background-color: white;
+}
+.form-row input[type='submit']{
+    background-color: rgb(33, 33, 79);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+fieldset{
+    background-color: rgb(221, 221, 251);
+    margin: auto;
+    width: 80%;
+}
+legend{
+    background-color: rgb(48, 48, 166);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+@media ONLY screen AND (max-width:480px){
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+    .form-row label, .spacer{
+        text-align: left;
+    }
+}

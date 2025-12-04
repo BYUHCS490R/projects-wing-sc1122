@@ -16,31 +16,45 @@
         <a href="page2.html">Food</a>
         <a href="page3.html">Transportation</a>
         <a href="page4.html">Payment</a>
-        <a href="page5.html">Weather</a>
+        <a href="page5.html">Reference</a>
         <a href="page6.html">Contact</a>
     </nav>
     <main>
         <p>If you have questions, feedback, or want more information about Hong Kong, feel free to send us a message!</p>
-        <form id="contactForm">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="topic">Reason for Contact:</label>
-        <select id="topic" name="topic" required>
-            <option value="">-- Please Select --</option>
-            <option value="general">General Question</option>
-            <option value="travel">Travel Advice</option>
-            <option value="feedback">Website Feedback</option>
-            <option value="other">Other</option>
-        </select>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Submit</button>
+        <form action="formprocess.html" method="post" id="contactForm">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <div class="form-row">
+                    <label for="name">Full Name:</label>
+                    <input type="text" name="name" placeholder="name" id="name">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="topic">Reason for Contact:</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">-- Please Select --</option>
+                        <option value="general">General Question</option>
+                        <option value="travel">Travel Advice</option>
+                        <option value="feedback">Website Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label> <input type="checkbox" checked> I agree to the terms</label> 
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
         </form>
 
         <p id="formFeedback"></p>
