@@ -88,6 +88,7 @@ form button:hover {
     border-top: thin solid black;
     border-bottom: thin solid black;
     font-size: 15pt;
+    margin: auto;
 }
 .schedule thead tr{
     background-color: #0d3d6d;
@@ -111,7 +112,7 @@ form button:hover {
     font-style: italic;
 }
 .schedule td{
-    padding: 3px;
+    padding: 10px;
 }
 
 .form-row{
@@ -121,11 +122,11 @@ form button:hover {
 }
 
 .form-row label{
-    width: 100px;
+    width: 200px;
     text-align: right;
 }
 .spacer{
-    width: 100px;
+    width: 200px;
     text-align: right;
 }
 .check-row{
@@ -150,7 +151,7 @@ form button:hover {
 fieldset{
     background-color: rgb(221, 221, 251);
     margin: auto;
-    width: 80%;
+    width: 500px;
 }
 legend{
     background-color: rgb(48, 48, 166);
